@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <label for="string">Nhập o day: </label>
+    <input type="text" name="" id="string">
+    <button onclick="transcript()">Dịch</button>
+    <p id="result"></p>
+
+    <script>
+     let eng = ["apple", "banana", "orange"];
+     let vng = ["tao","chuoi","cam"];
+     let string = document.getElementById("string"). value;
+     let index_eng = 0; 
+     let result = "";
+     for (let i =0; i<eng.length; i++);
+        if (string == eng[i]) {
+        index_eng = i;
+            for (let j =0; j<vng.length; j++);
+            if (index_eng = j) {
+                result = vng[j];
+            }
+
+        }
+    document.getElementById("result").innerHTML = result;
+
+    </script>
+    
+</body>  
+</html>  
+    
+
